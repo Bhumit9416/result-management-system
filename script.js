@@ -108,12 +108,13 @@ function handleFormSubmit(event) {
   results.push(result)
   localStorage.setItem("studentResults", JSON.stringify(results))
 
-  
+  // Show success message
   showAlert("successAlert", "Student result added successfully!")
 
-
+  // Reset form
   document.getElementById("resultForm").reset()
 
+  // Clear alerts after 3 seconds
   setTimeout(() => {
     hideAlerts()
   }, 3000)
@@ -190,12 +191,14 @@ function loadAndDisplayResults() {
 
   tableBody.innerHTML = ""
 
+  // Sort results by roll number
   allResults.sort((a, b) => a.rollNo.localeCompare(b.rollNo))
 
   allResults.forEach((result) => {
     const grade = getGrade(result.score)
     const row = document.createElement("tr")
 
+    // Format date
     const dobDate = new Date(result.dob)
     const formattedDob = dobDate.toLocaleDateString("en-GB", {
       day: "2-digit",

@@ -33,6 +33,7 @@ main {
   flex: 1;
 }
 
+/* Header Styling */
 header.navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -64,6 +65,7 @@ header.navbar-brand {
   color: var(--text-muted);
 }
 
+/* Card Styling */
 .card {
   border-radius: 0.75rem;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -74,6 +76,7 @@ header.navbar-brand {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Button Styling */
 .btn {
   font-weight: 600;
   border-radius: 0.375rem;
@@ -117,6 +120,7 @@ header.navbar-brand {
   font-size: 0.875rem;
 }
 
+/* Alert Styling */
 .alert {
   border-radius: 0.375rem;
   border: none;
@@ -133,6 +137,7 @@ header.navbar-brand {
   color: #721c24;
 }
 
+/* Invalid Feedback */
 .invalid-feedback {
   display: block;
   color: var(--danger-color);
@@ -140,6 +145,7 @@ header.navbar-brand {
   margin-top: 0.25rem;
 }
 
+/* Table Styling */
 .table {
   background-color: white;
   margin-bottom: 0;
@@ -166,6 +172,7 @@ header.navbar-brand {
   background-color: var(--light-gray);
 }
 
+/* Badge Styling */
 .badge {
   padding: 0.5rem 0.75rem;
   font-weight: 600;
@@ -201,10 +208,12 @@ header.navbar-brand {
   margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
   margin-top: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   main.container {
     padding-top: 1.5rem !important;

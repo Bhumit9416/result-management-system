@@ -1,8 +1,39 @@
 {
-  "name": "bhumit",
-  "version": "0.1.0",
+  "name": "result-management-system",
+  "version": "1.0.0",
+  "description": "Result Management System for teachers - HTML, CSS, JavaScript",
   "private": true,
   "scripts": {
-    "build": "echo 'no build script'"
+    "dev": "http-server -p 3000 -c-1",
+    "build": "echo 'Static site - no build required'",
+    "start": "http-server -p 3000 -c-1",
+    "serve": "http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "result",
+    "management",
+    "students",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@types/node": "24.10.2",
+    "typescript": "5.9.3",
+    "tailwindcss": "4.1.17",
+    "postcss": "8.5.6"
+  },
+  "dependencies": {
+    "next": "16.0.8",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.559.0",
+    "tailwind-merge": "3.4.0",
+    "tailwindcss-animate": "1.0.7"
   }
 }
